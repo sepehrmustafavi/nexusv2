@@ -1,0 +1,12 @@
+# Keep Colab's CUDA-enabled torch installation. Do not replace it with a CPU wheel.
+torch>=2.6,<2.11
+transformers==4.51.3
+peft==0.15.2
+datasets==3.5.0
+accelerate==1.6.0
+# The project name no longer resolves on some PyPI indexes. Use the original
+# PyPI-hosted source distribution (SenticNet 6, 200,000 entries), not a mirror.
+senticnet @ https://files.pythonhosted.org/packages/52/d1/0aa1923b16df6ff32c52f25c90a721f606efd03961f61a74bf29c4df620b/senticnet-1.6.tar.gz#sha256=2a3464b0d4e0cf7d19e4b114f721a7656c71980337b0d63a1182759ec93ac70f
+scikit-learn>=1.5,<1.8
+numpy>=1.26,<3
+tqdm>=4.66,<5
